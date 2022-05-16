@@ -11,6 +11,7 @@ type str = typeof str;
 const strConst = "234";
 type sc = typeof strConst;
 
+// number string symbol
 type cases = [
   Expect<
     Equal<
@@ -32,3 +33,7 @@ type error = TupleToObject<[[1, 2], {}]>;
 // type interface type世界
 
 // 1.typeof 把js的世界抓换为ts世界
+
+// expect(() => {
+//   type error = TupleToObject<[[1, 2], {}]>;
+// }).throw();
